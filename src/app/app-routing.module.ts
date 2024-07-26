@@ -10,6 +10,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'project',
     pathMatch: 'full'
+  },
+  {
+    path: '**', // This wildcard route will catch any undefined routes
+    redirectTo: 'project'
   }
 ];
 
